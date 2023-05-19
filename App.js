@@ -7,18 +7,18 @@ export default function App() {
     <SafeAreaView style={styles.container}>
     <View style={styles.box}>
       <View style={styles.wel}>
-      <Text style={styles.text}>WELCOME BACK !</Text></View>
+      <Text style={styles.text}>Wednesday,March 22/03/2023</Text></View>
 
       </View>
       
     <View style={styles.input}>
-      <Text style={styles.text1}>fullName</Text>
+      <Text style={styles.text1}>Team Name</Text>
       <TextInput style={styles.inputs}/>
-      <Text style={styles.text1}>password</Text>
+      <Text style={styles.text1}>Role</Text>
       <TextInput style={styles.inputs}/>
     </View>
     <View style={styles.button}>
-      <Button title='log in'/>
+      <Button title='add'/>
       <Button title='cancel'/>
     </View>
     </SafeAreaView>
@@ -33,9 +33,8 @@ const styles = StyleSheet.create({
   },
   box:{
     flex:1,
-    alignItems:'flex-end',
-    
-    justifyContent:'flex-end',
+    justifyContent:'center',
+    alignItems:'center'
    
     
   },
