@@ -1,14 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View,SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View,SafeAreaView,Button } from 'react-native';
 
-export default function App() {
+export default function Home({navigation}) {
+  const handlePress=()=>{
+    navigation.navigate('About')
+  }
   return (
     <SafeAreaView style={styles.container}>
     <View style={styles.container}>
       <Text style={styles.text}>
         WELCOME TO {'\n'}   EMPLOYEE ATTENDANCE  {'\n'}     SYSTEM
         </Text>
-      <StatusBar style="auto" />
+  <Button title='go to about' onPress={handlePress}/>
     </View>
     </SafeAreaView>
   );

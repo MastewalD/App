@@ -1,7 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,SafeAreaView,TextInput,Button } from 'react-native';
 
-export default function App() {
+export default function About({navigation}) {
+  const handlePress=()=>{
+    navigation.navigate('New')
+  }
   return (
    
     <SafeAreaView style={styles.container}>
@@ -10,7 +13,7 @@ export default function App() {
       <Text style={styles.text}>WELCOME BACK !</Text></View>
 
       </View>
-      
+      <Button title='test' onPress={handlePress}/>
     <View style={styles.input}>
       <Text style={styles.text1}>fullName</Text>
       <TextInput style={styles.inputs}/>

@@ -1,26 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,SafeAreaView,TextInput,Button } from 'react-native';
-
+import Navigate from './routes/homeStack'
 export default function App() {
   return (
    
     <SafeAreaView style={styles.container}>
-    <View style={styles.box}>
-      <View style={styles.wel}>
-      <Text style={styles.text}>Wednesday,March 22/03/2023</Text></View>
-
-      </View>
-      
-    <View style={styles.input}>
-      <Text style={styles.text1}>Team Name</Text>
-      <TextInput style={styles.inputs}/>
-      <Text style={styles.text1}>Role</Text>
-      <TextInput style={styles.inputs}/>
-    </View>
-    <View style={styles.button}>
-      <Button title='add'/>
-      <Button title='cancel'/>
-    </View>
+     <Navigate/>
     </SafeAreaView>
     
   );
