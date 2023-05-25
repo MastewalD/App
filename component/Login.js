@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,SafeAreaView,TextInput,Button } from 'react-native';
 
-export default function About({navigation}) {
+export default function Login({navigation}) {
   const handlePress=()=>{
     navigation.navigate('New')
   }

@@ -1,15 +1,21 @@
 import {createStackNavigator} from 'react-navigation-stack'
 import {createAppContainer} from 'react-navigation'
 import Home from '../component/Home'
-import About from '../component/About'
+import Login from '../component/Login'
 import New from '../component/New'
+import Register from '../component/Register'
 const screens={
+    Register:{
+        screen: Register
+    },
     Home:{
         screen: Home
     },
-    About:{
-        screen: About
+  
+    Login:{
+        screen: Login
     },
+   
     New:{
         screen: New
     }
